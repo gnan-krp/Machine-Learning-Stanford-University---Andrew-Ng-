@@ -68,21 +68,22 @@ there can only be two outputs 0(not-dangerous) or 1(dangerous).
  2. Regression Supervised Learning:
 
 
-    |                                                       
-    |                                                             
-  1 |                                                                 
-    |                                                                 
-    |                                                                 
-    |                                                                 
-    |                                                                  
-    |
-    |
-    |
-   0| _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-                     
-
-
-
+      |                                                       
+      |                                                             
+   400|                                                                 
+      |                         x    x                                     
+   300|                   x  x     x                                              
+      |               x x                                                   
+   200|          x  x                                                         
+      |    x   x
+   100|    x  x 
+      |  x
+     0| _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+        500    1000    1500   2000    2500
+              
+                 House size
+                  in feet2
+ 
 
 
 
