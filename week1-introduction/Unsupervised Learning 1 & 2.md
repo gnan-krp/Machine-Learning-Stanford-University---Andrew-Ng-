@@ -1,26 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 After supervised learning, the most widely used form of machine learning is unsupervised learning. But don't let the name uncivilized for you, 
 unsupervised learning is I think just as super as supervised learning. When we're looking at supervised learning ,it looks something like this 
 in the case of a classification problem. Each example, was associated with an output label y such as benign or malignant, designated by the 
