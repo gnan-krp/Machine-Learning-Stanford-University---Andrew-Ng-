@@ -90,7 +90,7 @@ is benign than the output would be 0 and malignant than out put would be 1. But,
 mine,then the regression supervised learning comes to play.
 
 
-In this type of ml we give the algorithm several inputs and several outputsat first and when the algorithm starts to learn by itself we ask it to give a closest price at which at a particular size the output would be maximum, the algorithm in this type of ml never says the exact size but gives you the probability percentage that at that particular sied the house price would be at maximum cost.
+In this type of ml we give the algorithm several inputs and several outputsat first and when the algorithm starts to learn by itself we ask it to give a closest price at which at a particular size the output would be maximum, the algorithm in this type of ml never says the exact size but gives you the probability percentage that at that particular size the house price would be at maximum cost.
 
 
-The method that the algorithm uses is let's say at first it uses the straight line but it is not 100% surity that a straight line will give a more correct output a curve can also give, so it is upto the algorithm which it is will use by analysing the several inputs of the house size.
+The method that the algorithm uses is let's say at first it uses the straight line but it is not 100% surity that a straight line will give a more correct output, a curve can also give, so it is upto the algorithm which method it  will use by analysing the several inputs of the house size.
