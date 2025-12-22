@@ -5,7 +5,7 @@ After supervised learning, the next widely used type of machine learning is unsu
 Don't let the name fool you — unsupervised learning is just as powerful as supervised learning.
 """
 
-# --- 1. Definition ---
+#  1. Definition 
 """
 Unsupervised learning is a type of machine learning where the algorithm is given data without 
 any associated output labels (y). The goal is to find patterns, structures, or interesting 
@@ -17,7 +17,7 @@ Key points:
 - Useful when labeling data is expensive or impossible
 """
 
-# --- 2. Example ---
+#  2. Example 
 """
 Supervised Learning Example (Classification):
 - Each example has a label y
@@ -31,7 +31,7 @@ Unsupervised Learning Example:
 - Task: Find patterns, structures, or clusters in the data
 """
 
-# --- 3. Goal of Unsupervised Learning ---
+#  3. Goal of Unsupervised Learning 
 """
 - Discover hidden structures in data
 - Group similar data points together
@@ -39,7 +39,7 @@ Unsupervised Learning Example:
 - Generate insights without explicit guidance
 """
 
-# --- 4. Types of Unsupervised Learning ---
+#  4. Types of Unsupervised Learning 
 # 4.1 Clustering
 """
 - Groups data points into clusters based on similarity
@@ -81,7 +81,7 @@ Explanation:
   - Feature extraction
 """
 
-# --- 5. Key Characteristics ---
+#  5. Key Characteristics 
 """
 - Works on unlabeled data
 - Finds intrinsic patterns
@@ -89,7 +89,7 @@ Explanation:
 - Helps understand the underlying structure of data
 """
 
-# --- 6. Summary ---
+#  6. Summary 
 """
 Unsupervised learning allows machines to:
 1. Explore data without explicit answers
