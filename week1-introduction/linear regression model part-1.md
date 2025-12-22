@@ -6,12 +6,14 @@
 ## 1. Goal of This Lecture
 - Introduce the **first machine learning model**: **linear regression** with one variable.
 - Focus on **supervised learning** – learning from labeled data.
+- Learn to predict continuous outputs from input features.
 
 ---
 
 ## 2. Supervised Learning Overview
 - Supervised learning uses a **training set** of examples with known inputs and outputs.
 - Goal: Learn a relationship between **inputs (x)** and **outputs (y)** to predict new data.
+- Example: Predict house prices based on house size.
 
 ---
 
@@ -21,10 +23,10 @@
 
 | Size (x) | Price (y) |
 |-----------|-----------|
-| 2104      | 460       |
+| 852       | 178       |
 | 1416      | 232       |
 | 1534      | 315       |
-| 852       | 178       |
+| 2104      | 460       |
 
 - Number of training examples: \(m\)
 
@@ -61,52 +63,45 @@ h_\theta(x) = \theta_0 + \theta_1 x
 
 ---
 
-## 8. Important Notes
-- This lecture **does not cover**:
-  - Cost function
-  - How to choose \(\theta_0, \theta_1\)
-- These are introduced in later videos.
-
----
-
-## 9. Summary
+## 8. Summary
 - **Supervised learning** uses labeled training data.
 - A training example: \((x^{(i)}, y^{(i)})\)
 - Hypothesis: \(h_\theta(x) = \theta_0 + \theta_1 x\)
 - Parameters \(\theta_0, \theta_1\) define model predictions.
-- This lecture covers **model representation only**.
+- Linear regression predicts a continuous variable from a single feature.
 
 ---
 
-## 10. Graph: Linear Regression Model (Proportional)
+## 9. Graph: Linear Regression Model
 
 ```mermaid
-%% Proportional Linear Regression Graph
+%% Linear Regression Graph
 %% x-axis: House Size, y-axis: Price
 %% Blue points: Training data
 %% Red line: Hypothesis hθ(x) = θ₀ + θ₁x
+%% Scaled for illustration
 
-graph TD
-    %% Styling
-    classDef axis fill:#fff,stroke:#000,stroke-width:2px;
-    classDef point fill:#1f77b4,stroke:#1f77b4,color:#fff,stroke-width:1px;
-    classDef line fill:none,stroke:#f00,stroke-width:2px;
+%% Styling
+classDef axis fill:#fff,stroke:#000,stroke-width:2px;
+classDef point fill:#1f77b4,stroke:#1f77b4,color:#fff,stroke-width:1px;
+classDef line fill:none,stroke:#f00,stroke-width:2px;
 
+graph LR
     %% Axes
     axisY[Price (y)]:::axis
     axisX[Size (x)]:::axis
 
     %% Training points
-    P1["(2104,460)"]:::point
+    P1["(852,178)"]:::point
     P2["(1416,232)"]:::point
     P3["(1534,315)"]:::point
-    P4["(852,178)"]:::point
+    P4["(2104,460)"]:::point
 
     %% Hypothesis line (illustrative)
-    L["hθ(x) = θ₀ + θ₁x"]:::line
+    H["hθ(x) = θ₀ + θ₁x"]:::line
 
-    %% Connect line to points (illustrative)
-    L --- P1
-    L --- P2
-    L --- P3
-    L --- P4
+    %% Connect line to points (for illustration)
+    H --- P1
+    H --- P2
+    H --- P3
+    H --- P4
