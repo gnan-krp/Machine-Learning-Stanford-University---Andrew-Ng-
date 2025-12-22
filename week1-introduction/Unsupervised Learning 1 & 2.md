@@ -1,16 +1,64 @@
-After supervised learning, the most widely used form of machine learning is unsupervised learning. But don't let the name uncivilized for you, 
-unsupervised learning is I think just as super as supervised learning. When we're looking at supervised learning ,it looks something like this 
-in the case of a classification problem. Each example, was associated with an output label y such as benign or malignant, designated by the 
-poles and crosses in unsupervised learning. Were given data that isn't associated with any output labels y,say you're given data on patients 
-and their tumor size and the patient's age. But not whether the tumor was benign or malignant, so the dataset looks like this. 
+# Unsupervised Learning
 
-We're not asked to diagnose whether the tumor is benign or malignant, because we're not given any labels. Why in the dataset, instead, our job
-is to find some structure or some pattern or just find something interesting in the data. This is unsupervised learning, we call it 
-unsupervised because we're not trying to supervise the algorithm. To give some quote right answer for every input, instead, we asked our 
-room to figure out all by yourself what's interesting. Or what patterns or structures that might be in this data, with this particular data 
-set. An unsupervised learning algorithm, might decide that the data can be assigned to two different groups or two different clusters. And so 
-it might decide, that there's one cluster what group over here, and there's another cluster or group over here. 
+After **supervised learning**, the next widely used form of machine learning is **unsupervised learning**.  
 
-This is a particular type of unsupervised learning, called a clustering algorithm. Because it places the unlabeled data, into different 
-clusters and this turns out to be used in many applications. For example, clustering is used in google news, what google news does is
-every day it goes and looks at hundreds of thousands of news articles on the internet, and groups related stories together.
+> Don’t let the name “unsupervised” fool you — it is just as powerful as supervised learning.
+
+---
+
+## 1. What is Unsupervised Learning?
+
+In **supervised learning**, each example is associated with an **output label (y)**, such as “benign” or “malignant” for a tumor.  
+
+In **unsupervised learning**, the data **does not have any output labels**. For example:  
+
+| Patient | Tumor Size (cm) | Age (years) |
+|---------|----------------|-------------|
+| 1       | 2              | 45          |
+| 2       | 5              | 50          |
+| 3       | 1              | 35          |
+| 4       | 7              | 60          |
+
+- Notice that we **don’t know** if the tumor is benign or malignant.  
+- The goal is **not to predict labels**, but to **find structure, patterns, or interesting insights** in the data.
+
+---
+
+## 2. How Unsupervised Learning Works
+
+- The algorithm is **not given correct answers**.  
+- Instead, it tries to **figure out patterns or clusters** in the data.  
+- For example, an algorithm might find that the data naturally separates into **two groups**:
+
+Tumor Size vs Age (Two Clusters)
+
+Age →
+90 │        █   █   █   █
+80 │        █   █   █
+70 │        █   █
+60 │
+50 │
+40 │
+30 │  █   █   █   █
+   │  █   █   █
+   │  █   █
+   └────────────────────────
+     1   2   3   5   7
+       Tumor Size (cm)
+
+
+
+- These groups are called **clusters**.  
+
+---
+
+## 3. Clustering Algorithms
+
+- Clustering is a type of **unsupervised learning** that assigns **unlabeled data into different clusters**.  
+- Example applications:  
+  - **Google News:** Groups related news articles together every day.  
+  - **Customer segmentation:** Groups customers with similar behavior.  
+  - **Image compression:** Groups similar pixels or patterns.  
+
+> In short, unsupervised learning is about letting the algorithm **discover structure in the data on its own**.
+
