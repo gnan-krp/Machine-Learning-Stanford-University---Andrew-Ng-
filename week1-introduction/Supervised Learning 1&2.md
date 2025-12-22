@@ -53,13 +53,14 @@ Dataset: Tumor labeled as **benign (0)** or **malignant (1)** based on tumor siz
 
 Tumor Diagnosis vs Tumor Size
 Diagnosis
-1 │          ●         ●
+1 │        █         █
   │
-0 │    ●         ●
+0 │  █         █
   │
   └────────────────────────
       1   2   3   5   7
          Tumor Size (cm)
+
 
 
 
@@ -89,14 +90,15 @@ In regression, the algorithm predicts **continuous outputs**.
 
 House Price vs House Size
 Price ($1000s)
-400 │                  ●       ●
-350 │             ●     ●
-300 │         ●   ●
-200 │     ●   ●
-100 │  ●
+400 │                  █       █
+350 │             █     █
+300 │         █   █
+200 │     █   █
+100 │  █
   0 │──────────────────────────
       500 1000 1500 2000 2500
           House Size (ft²)
+
 
 
 **Explanation:**  
