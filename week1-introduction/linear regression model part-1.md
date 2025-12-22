@@ -1,5 +1,5 @@
 # Machine Learning – Linear Regression (Model 1)
-*Notes from Andrew Ng’s Coursera/Stanford Lecture – First 10 minutes*
+*Notes from Andrew Ng’s Coursera/Stanford Lecture
 
 ---
 
@@ -72,36 +72,3 @@ h_\theta(x) = \theta_0 + \theta_1 x
 
 ---
 
-## 9. Graph: Linear Regression Model
-
-```mermaid
-%% Linear Regression Graph
-%% x-axis: House Size, y-axis: Price
-%% Blue points: Training data
-%% Red line: Hypothesis hθ(x) = θ₀ + θ₁x
-%% Scaled for illustration
-
-%% Styling
-classDef axis fill:#fff,stroke:#000,stroke-width:2px;
-classDef point fill:#1f77b4,stroke:#1f77b4,color:#fff,stroke-width:1px;
-classDef line fill:none,stroke:#f00,stroke-width:2px;
-
-graph LR
-    %% Axes
-    axisY[Price (y)]:::axis
-    axisX[Size (x)]:::axis
-
-    %% Training points
-    P1["(852,178)"]:::point
-    P2["(1416,232)"]:::point
-    P3["(1534,315)"]:::point
-    P4["(2104,460)"]:::point
-
-    %% Hypothesis line (illustrative)
-    H["hθ(x) = θ₀ + θ₁x"]:::line
-
-    %% Connect line to points (for illustration)
-    H --- P1
-    H --- P2
-    H --- P3
-    H --- P4
