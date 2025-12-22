@@ -85,6 +85,7 @@ Age →
      1   2   3   5   7
        Tumor Size (cm)
 
+
 ## 5. Summary of Unsupervised Learning
 
 - **Supervised learning:** Predicts outputs from labeled data.  
@@ -98,7 +99,7 @@ Age →
 
 ---
 
-## 6. Advantages of Unsupervised Learning
+## 6. Key Advantages
 
 - Does **not require labeled data**, saving time and cost.  
 - Can **discover hidden patterns** in the data.  
@@ -111,4 +112,5 @@ Age →
 
 - Harder to **evaluate performance** without ground-truth labels.  
 - Results can be **sensitive to the choice of algorithm and parameters**.  
-- Clusters or patterns found may **not always have real-world significance** — interpretation is required.  
+- Clusters or patterns found may **not always have real-world significance** — interpretation is required.
+
