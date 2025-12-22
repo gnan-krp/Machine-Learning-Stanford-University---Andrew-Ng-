@@ -1,77 +1,57 @@
 # Unsupervised Learning Notes
 
-After **supervised learning**, the next widely used type of machine learning is **unsupervised learning**.  
+"""
+After supervised learning, the next widely used type of machine learning is unsupervised learning.
+Don't let the name fool you — unsupervised learning is just as powerful as supervised learning.
+"""
 
-> Don’t let the name “unsupervised” fool you — it is just as powerful and widely used as supervised learning.
+# --- 1. Definition ---
+"""
+Unsupervised learning is a type of machine learning where the algorithm is given data without 
+any associated output labels (y). The goal is to find patterns, structures, or interesting 
+insights in the data automatically.
 
----
+Key points:
+- No supervision (no labeled outputs)
+- Algorithm identifies patterns or clusters
+- Useful when labeling data is expensive or impossible
+"""
 
-## 1. Definition
+# --- 2. Example ---
+"""
+Supervised Learning Example (Classification):
+- Each example has a label y
+- Example: Tumor classification as benign or malignant
+  Input: Tumor size, Patient age
+  Output: Label (benign/malignant)
+  
+Unsupervised Learning Example:
+- Data has no labels
+- Example: Patients' tumor size and age without benign/malignant label
+- Task: Find patterns, structures, or clusters in the data
+"""
 
-Unsupervised learning is a type of machine learning where the algorithm learns **patterns or structure in data without labeled outputs**.  
+# --- 3. Goal of Unsupervised Learning ---
+"""
+- Discover hidden structures in data
+- Group similar data points together
+- Reduce dimensionality or summarize data
+- Generate insights without explicit guidance
+"""
 
-- Unlike supervised learning, we **do not provide output labels (y)** for each input.  
-- The algorithm must **figure out patterns, relationships, or clusters** in the data on its own.  
+# --- 4. Types of Unsupervised Learning ---
+# 4.1 Clustering
+"""
+- Groups data points into clusters based on similarity
+- Example: Two clusters of patients based on tumor size and age
+- Applications:
+  - Customer segmentation
+  - Image segmentation
+  - Document clustering (e.g., Google News groups related news articles)
 
-**Example dataset:**
+Clustering Visualization:
 
-| Patient | Tumor Size (cm) | Age (years) |
-|---------|----------------|-------------|
-| 1       | 2              | 30          |
-| 2       | 3              | 32          |
-| 3       | 5              | 68          |
-| 4       | 7              | 70          |
-
-- Here, we **don’t know if tumors are benign or malignant**.  
-- The goal is to **discover patterns or groupings** in the data.
-
----
-
-## 2. Key Concepts
-
-### 2.1 Clustering
-Clustering is one of the main types of unsupervised learning.  
-
-- It **groups data points into clusters** based on similarity.  
-- No prior labels are required — the algorithm **learns the grouping from the data itself**.  
-
-**Applications of clustering:**
-
-- **Google News:** Groups related news articles together.  
-- **Customer segmentation:** Groups customers based on buying behavior.  
-- **Image compression:** Groups similar pixels or patterns.  
-- **Medical data:** Groups patients with similar symptoms for study.  
-
-### 2.2 Dimensionality Reduction
-Another type of unsupervised learning.  
-
-- Reduces the number of variables while keeping important information.  
-- Helps **visualize high-dimensional data**.  
-- Common techniques: **PCA (Principal Component Analysis)**, **t-SNE**.  
-
----
-
-## 3. How Unsupervised Learning Works
-
-1. **Input:** Unlabeled dataset.  
-2. **Process:** Algorithm searches for patterns, correlations, or groups.  
-3. **Output:** Groups (clusters), associations, or compressed representations.  
-
-**Example:** Tumor dataset with only **size and age**.  
-
-- Cluster 1: Younger patients, smaller tumors.  
-- Cluster 2: Older patients, larger tumors.  
-
-The algorithm does **not know the correct answer** but identifies meaningful structures.  
-
----
-
-## 4. Example: Clustering Graph (Two Clusters)
-
-```markdown
-Tumor Size vs Age (Two Clusters)
-
-Age →
+  Age →
 70 │        █   █   █   █
    │        █   █   █
    │        █   █
@@ -85,32 +65,39 @@ Age →
      1   2   3   5   7
        Tumor Size (cm)
 
+Explanation:
+- Each 'o' or 'x' represents a data point
+- Algorithm automatically assigns similar points to the same cluster
+- No labels are provided
+"""
 
-## 5. Summary of Unsupervised Learning
+# 4.2 Dimensionality Reduction
+"""
+- Reduce the number of features while preserving important information
+- Techniques: PCA (Principal Component Analysis), t-SNE
+- Applications:
+  - Data visualization
+  - Noise reduction
+  - Feature extraction
+"""
 
-- **Supervised learning:** Predicts outputs from labeled data.  
-- **Unsupervised learning:** Finds patterns and clusters in unlabeled data.  
-- **Key techniques:**  
-  - **Clustering:** Groups similar data points.  
-  - **Dimensionality reduction:** Simplifies high-dimensional data.  
-- **Applications:** News grouping, customer segmentation, image compression, exploratory data analysis.  
+# --- 5. Key Characteristics ---
+"""
+- Works on unlabeled data
+- Finds intrinsic patterns
+- Often exploratory
+- Helps understand the underlying structure of data
+"""
 
-> Unsupervised learning lets the algorithm **discover structure in the data on its own**, making it powerful for understanding complex datasets without labels.
+# --- 6. Summary ---
+"""
+Unsupervised learning allows machines to:
+1. Explore data without explicit answers
+2. Discover patterns, clusters, or structures
+3. Assist in data analysis, feature extraction, and grouping
 
----
-
-## 6. Key Advantages
-
-- Does **not require labeled data**, saving time and cost.  
-- Can **discover hidden patterns** in the data.  
-- Useful for **exploratory data analysis**.  
-- Can **improve supervised learning** by preprocessing or extracting features.  
-
----
-
-## 7. Limitations of Unsupervised Learning
-
-- Harder to **evaluate performance** without ground-truth labels.  
-- Results can be **sensitive to the choice of algorithm and parameters**.  
-- Clusters or patterns found may **not always have real-world significance** — interpretation is required.
-
+Important applications:
+- Clustering (grouping similar data points)
+- Dimensionality reduction (simplifying complex data)
+- Market segmentation, recommendation systems, anomaly detection
+"""
